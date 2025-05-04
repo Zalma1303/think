@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Think-Off Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html" class="active">О нас</a>
+            <a href="motivation.html">Мотивация</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1>О Нас</h1>
+            <p>Ваш надежный финансовый партнер с 1995 года</p>
+        </header>
+
+        <section class="page-section">
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>Наша История</h2>
+                    <p>Think-Off Bank был основан с целью предоставления инновационных банковских решений. За более чем 25 лет работы мы стали одним из ведущих финансовых учреждений, обслуживающих миллионы клиентов по всему миру.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Наша Миссия</h2>
+                    <p>Мы стремимся сделать банковские услуги доступными, удобными и безопасными для каждого. Наша цель - помочь клиентам достичь их финансовых целей через инновационные решения и персонализированный подход.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Наши Ценности</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Инновации и технологический прогресс</li>
+                        <li><i class="fas fa-check"></i> Клиентоориентированность</li>
+                        <li><i class="fas fa-check"></i> Надежность и безопасность</li>
+                        <li><i class="fas fa-check"></i> Социальная ответственность</li>
+                    </ul>
+                </div>
+
+                <div class="about-section">
+                    <h2>Наша Команда</h2>
+                    <p>Мы гордимся нашей командой профессионалов, которые ежедневно работают над тем, чтобы сделать банковские услуги лучше и доступнее для наших клиентов. Наши сотрудники - это эксперты в своих областях, готовые помочь вам в любом вопросе.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться на главную
+        </a>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

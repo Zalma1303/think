@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Think-Off Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html" class="active">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="motivation.html">Мотивация</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1>Наши Услуги</h1>
+            <p>Комплексные банковские решения для вашего бизнеса и личных нужд</p>
+        </header>
+
+        <section class="page-section">
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Цифровой Банкинг</h3>
+                    <p>Управляйте своими финансами онлайн 24/7</p>
+                    <ul>
+                        <li>Мобильное приложение</li>
+                        <li>Интернет-банкинг</li>
+                        <li>Быстрые переводы</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Кредиты</h3>
+                    <p>Гибкие условия кредитования</p>
+                    <ul>
+                        <li>Ипотека</li>
+                        <li>Потребительские кредиты</li>
+                        <li>Автокредиты</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Кредитные Карты</h3>
+                    <p>Премиальные карты с бонусами</p>
+                    <ul>
+                        <li>Кэшбэк до 5%</li>
+                        <li>Бесплатное обслуживание</li>
+                        <li>Страхование покупок</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Инвестиции</h3>
+                    <p>Умные инвестиционные решения</p>
+                    <ul>
+                        <li>Биржевые инструменты</li>
+                        <li>Доверительное управление</li>
+                        <li>Инвестиционные фонды</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться на главную
+        </a>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
