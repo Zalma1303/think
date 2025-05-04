@@ -1,3 +1,5 @@
+import { auth, db, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, doc, setDoc, serverTimestamp } from './firebase-config.js';
+
 // DOM Elements
 const loginBtn = document.getElementById('loginBtn');
 const signupBtn = document.getElementById('signupBtn');
@@ -39,7 +41,7 @@ loginForm.addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        const userCredential = await auth.signInWithEmailAndPassword(email, password);
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         console.log('Успешный вход:', user);
         closeModal(loginModal);
@@ -57,14 +59,14 @@ signupForm.addEventListener('submit', async (e) => {
     const password = document.getElementById('signupPassword').value;
 
     try {
-        const userCredential = await auth.createUserWithEmailAndPassword(email, password);
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
 
         // Store additional user data in Firestore
-        await db.collection('users').doc(user.uid).set({
+        await setDoc(doc(db, 'users', user.uid), {
             fullName: fullName,
             email: email,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+            createdAt: serverTimestamp()
         });
 
         console.log('Аккаунт успешно создан:', user);
@@ -77,7 +79,7 @@ signupForm.addEventListener('submit', async (e) => {
 });
 
 // Auth State Observer
-auth.onAuthStateChanged((user) => {
+onAuthStateChanged(auth, (user) => {
     if (user) {
         // User is signed in
         console.log('Пользователь вошел в систему:', user);

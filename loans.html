@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредиты - Think-Off Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1>Кредиты</h1>
+            <p>Гибкие условия кредитования для любых целей</p>
+        </header>
+
+        <section class="page-section">
+            <div class="loans-content">
+                <div class="loan-offer">
+                    <div class="interest-rate">
+                        <h2>Ставка от 22% годовых</h2>
+                        <div class="rate-highlight">
+                            <span class="rate">22%</span>
+                            <span class="per-year">годовых</span>
+                        </div>
+                    </div>
+
+                    <div class="why-us">
+                        <h3>Почему наши кредиты лучше?</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Прозрачные условия без скрытых комиссий</li>
+                            <li><i class="fas fa-check-circle"></i> Быстрое рассмотрение заявки</li>
+                            <li><i class="fas fa-check-circle"></i> Гибкий график платежей</li>
+                            <li><i class="fas fa-check-circle"></i> Возможность досрочного погашения</li>
+                            <li><i class="fas fa-check-circle"></i> Персональный менеджер</li>
+                        </ul>
+                    </div>
+
+                    <div class="loan-types">
+                        <h3>Виды кредитов</h3>
+                        <div class="loan-cards">
+                            <div class="loan-card">
+                                <i class="fas fa-home"></i>
+                                <h4>Ипотека</h4>
+                                <p>от 22% годовых</p>
+                                <button class="btn btn-primary">Подробнее</button>
+                            </div>
+                            <div class="loan-card">
+                                <i class="fas fa-car"></i>
+                                <h4>Автокредит</h4>
+                                <p>от 22% годовых</p>
+                                <button class="btn btn-primary">Подробнее</button>
+                            </div>
+                            <div class="loan-card">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <h4>Потребительский</h4>
+                                <p>от 22% годовых</p>
+                                <button class="btn btn-primary">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="services.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться к услугам
+        </a>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">ФИО</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Пароль</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 

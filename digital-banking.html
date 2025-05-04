@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровой Банкинг - Think-Off Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1>Цифровой Банкинг</h1>
+            <p>Управляйте финансами в любое время и в любом месте</p>
+        </header>
+
+        <section class="page-section">
+            <div class="digital-banking-content">
+                <div class="app-preview">
+                    <div class="app-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Think-Off</span>
+                    </div>
+                    <div class="app-features">
+                        <h2>Наше Мобильное Приложение</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Мгновенные переводы</li>
+                            <li><i class="fas fa-check"></i> Управление картами</li>
+                            <li><i class="fas fa-check"></i> Платежи по QR-коду</li>
+                            <li><i class="fas fa-check"></i> Инвестиции в один клик</li>
+                            <li><i class="fas fa-check"></i> Безопасная аутентификация</li>
+                        </ul>
+                        <div class="download-buttons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fab fa-apple"></i> App Store
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="fab fa-google-play"></i> Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banking-features">
+                    <h2>Преимущества Цифрового Банкинга</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>24/7 Доступ</h3>
+                            <p>Управляйте счетами в любое время</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Безопасность</h3>
+                            <p>Многоуровневая защита данных</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Аналитика</h3>
+                            <p>Детальная статистика расходов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="services.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться к услугам
+        </a>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">ФИО</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Пароль</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 

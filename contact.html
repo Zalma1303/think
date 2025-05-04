@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Think-Off Bank - Ваш цифровой банковский партнер</title>
+    <title>Контакты - Think-Off Bank</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -16,10 +16,10 @@
             </a>
         </div>
         <div class="nav-links">
-            <a href="index.html" class="active">Главная</a>
+            <a href="index.html">Главная</a>
             <a href="services.html">Услуги</a>
             <a href="about.html">О нас</a>
-            <a href="contact.html">Контакты</a>
+            <a href="contact.html" class="active">Контакты</a>
         </div>
         <div class="auth-buttons">
             <button id="loginBtn" class="btn btn-outline">Вход</button>
@@ -27,36 +27,49 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Добро пожаловать в Think-Off Bank</h1>
-            <p>Ваш надежный партнер в цифровых банковских решениях</p>
-            <button class="btn btn-primary">Начать</button>
-        </div>
-    </section>
+    <div class="page-content">
+        <header class="page-header">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами для получения дополнительной информации</p>
+        </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Наши Услуги</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-wallet"></i>
-                <h3>Цифровой Банкинг</h3>
-                <p>Управляйте своими счетами в любое время и в любом месте</p>
+        <section class="page-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h2>Руководство</h2>
+                        <div class="contact-details">
+                            <p><strong>Должность:</strong> Генеральный директор</p>
+                            <p><strong>Email:</strong> ceo@think-off-bank.ru</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h2>Телефон</h2>
+                        <div class="contact-details">
+                            <p><strong>Клиентская поддержка:</strong> 8-800-123-45-67</p>
+                            <p><strong>Время работы:</strong> Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h2>Email</h2>
+                        <div class="contact-details">
+                            <p><strong>Общие вопросы:</strong> info@think-off-bank.ru</p>
+                            <p><strong>Поддержка:</strong> support@think-off-bank.ru</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-money-bill-wave"></i>
-                <h3>Кредиты</h3>
-                <p>Конкурентные ставки для всех ваших потребностей</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-credit-card"></i>
-                <h3>Кредитные Карты</h3>
-                <p>Вознаграждения и преимущества за каждую покупку</p>
-            </div>
-        </div>
-    </section>
+        </section>
+
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться на главную
+        </a>
+    </div>
 
     <!-- Login Modal -->
     <div id="loginModal" class="modal">
@@ -101,11 +114,6 @@
     </div>
 
     <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
-    
-    <!-- Custom Scripts -->
     <script type="module" src="firebase-config.js"></script>
     <script type="module" src="script.js"></script>
 </body>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредитные Карты - Think-Off Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1>Кредитные Карты</h1>
+            <p>Быстрое оформление и выгодные условия</p>
+        </header>
+
+        <section class="page-section">
+            <div class="cards-content">
+                <div class="quick-issuance">
+                    <h2>Быстрое оформление</h2>
+                    <div class="issuance-steps">
+                        <div class="step">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>1. Заявка онлайн</h3>
+                            <p>Заполните простую форму на сайте</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-clock"></i>
+                            <h3>2. Быстрое решение</h3>
+                            <p>Рассмотрение заявки за 5 минут</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>3. Получение карты</h3>
+                            <p>Доставка курьером или в отделении</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-benefits">
+                    <h2>Преимущества наших карт</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <i class="fas fa-percentage"></i>
+                            <h3>Кэшбэк до 5%</h3>
+                            <p>Возвращаем часть средств за покупки</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-gift"></i>
+                            <h3>Бонусная программа</h3>
+                            <p>Накопление и обмен бонусов</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Безопасность</h3>
+                            <p>Защита от мошенничества</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-globe"></i>
+                            <h3>Бесплатные переводы</h3>
+                            <p>Международные переводы без комиссии</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-types">
+                    <h2>Выберите свою карту</h2>
+                    <div class="card-catalog">
+                        <div class="card-item">
+                            <div class="card-image">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Классическая</h3>
+                            <ul>
+                                <li>Кэшбэк 1%</li>
+                                <li>Лимит до 300,000 ₽</li>
+                                <li>Бесплатное обслуживание</li>
+                            </ul>
+                            <button class="btn btn-primary">Оформить</button>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-image">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Золотая</h3>
+                            <ul>
+                                <li>Кэшбэк 3%</li>
+                                <li>Лимит до 500,000 ₽</li>
+                                <li>Премиум-обслуживание</li>
+                            </ul>
+                            <button class="btn btn-primary">Оформить</button>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-image">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Платиновая</h3>
+                            <ul>
+                                <li>Кэшбэк 5%</li>
+                                <li>Лимит до 1,000,000 ₽</li>
+                                <li>VIP-обслуживание</li>
+                            </ul>
+                            <button class="btn btn-primary">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="services.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Вернуться к услугам
+        </a>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
