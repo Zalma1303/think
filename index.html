@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Think-Off Bank - Your Digital Banking Partner</title>
+    <title>Think-Off Bank - Ваш цифровой банковский партнер</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,47 +11,49 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <h1>Think-Off Bank</h1>
+            <a href="index.html">
+                <h1>Think-Off Bank</h1>
+            </a>
         </div>
         <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active">Главная</a>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
         </div>
         <div class="auth-buttons">
-            <button id="loginBtn" class="btn btn-outline">Login</button>
-            <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+            <button id="loginBtn" class="btn btn-outline">Вход</button>
+            <button id="signupBtn" class="btn btn-primary">Регистрация</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to Think-Off Bank</h1>
-            <p>Your trusted partner in digital banking solutions</p>
-            <button class="btn btn-primary">Get Started</button>
+            <h1>Добро пожаловать в Think-Off Bank</h1>
+            <p>Ваш надежный партнер в цифровых банковских решениях</p>
+            <button class="btn btn-primary">Начать</button>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <h2>Our Services</h2>
+        <h2>Наши Услуги</h2>
         <div class="services-grid">
             <div class="service-card">
                 <i class="fas fa-wallet"></i>
-                <h3>Digital Banking</h3>
-                <p>Manage your accounts anytime, anywhere</p>
+                <h3>Цифровой Банкинг</h3>
+                <p>Управляйте своими счетами в любое время и в любом месте</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-money-bill-wave"></i>
-                <h3>Loans</h3>
-                <p>Competitive rates for all your needs</p>
+                <h3>Кредиты</h3>
+                <p>Конкурентные ставки для всех ваших потребностей</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-credit-card"></i>
-                <h3>Credit Cards</h3>
-                <p>Rewards and benefits for every purchase</p>
+                <h3>Кредитные Карты</h3>
+                <p>Вознаграждения и преимущества за каждую покупку</p>
             </div>
         </div>
     </section>
@@ -60,17 +62,17 @@
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Login</h2>
+            <h2>Вход</h2>
             <form id="loginForm">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">Пароль</label>
                     <input type="password" id="password" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Войти</button>
             </form>
         </div>
     </div>
@@ -79,10 +81,10 @@
     <div id="signupModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Sign Up</h2>
+            <h2>Регистрация</h2>
             <form id="signupForm">
                 <div class="form-group">
-                    <label for="fullName">Full Name</label>
+                    <label for="fullName">Полное Имя</label>
                     <input type="text" id="fullName" required>
                 </div>
                 <div class="form-group">
@@ -90,10 +92,10 @@
                     <input type="email" id="signupEmail" required>
                 </div>
                 <div class="form-group">
-                    <label for="signupPassword">Password</label>
+                    <label for="signupPassword">Пароль</label>
                     <input type="password" id="signupPassword" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
             </form>
         </div>
     </div>

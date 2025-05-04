@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -25,9 +25,18 @@ body {
     z-index: 1000;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .logo h1 {
     color: #2c3e50;
     font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+    color: #3498db;
 }
 
 .nav-links a {

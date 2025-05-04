@@ -41,12 +41,12 @@ loginForm.addEventListener('submit', async (e) => {
     try {
         const userCredential = await auth.signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
-        console.log('Logged in successfully:', user);
+        console.log('Успешный вход:', user);
         closeModal(loginModal);
         // Redirect to dashboard or show success message
     } catch (error) {
-        console.error('Login error:', error.message);
-        alert(error.message);
+        console.error('Ошибка входа:', error.message);
+        alert('Ошибка входа: ' + error.message);
     }
 });
 
@@ -67,12 +67,12 @@ signupForm.addEventListener('submit', async (e) => {
             createdAt: firebase.firestore.FieldValue.serverTimestamp()
         });
 
-        console.log('Account created successfully:', user);
+        console.log('Аккаунт успешно создан:', user);
         closeModal(signupModal);
         // Redirect to dashboard or show success message
     } catch (error) {
-        console.error('Signup error:', error.message);
-        alert(error.message);
+        console.error('Ошибка регистрации:', error.message);
+        alert('Ошибка регистрации: ' + error.message);
     }
 });
 
@@ -80,14 +80,14 @@ signupForm.addEventListener('submit', async (e) => {
 auth.onAuthStateChanged((user) => {
     if (user) {
         // User is signed in
-        console.log('User is signed in:', user);
+        console.log('Пользователь вошел в систему:', user);
         // Update UI for logged-in state
         loginBtn.style.display = 'none';
         signupBtn.style.display = 'none';
         // Add logout button or user profile button
     } else {
         // User is signed out
-        console.log('User is signed out');
+        console.log('Пользователь вышел из системы');
         // Update UI for logged-out state
         loginBtn.style.display = 'block';
         signupBtn.style.display = 'block';
